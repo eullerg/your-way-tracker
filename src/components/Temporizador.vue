@@ -24,7 +24,7 @@
     name: "TemporizadorPrincipal",
     emits: ['aoTemporizadorFinalizado'],
     components: {
-      Cronometro
+      Cronometro,
     },
     data () {
       return {
@@ -34,15 +34,13 @@
       }
     },
     methods: {
-      iniciar () {
-        // começar a contagem
-        // 1 seg = 1000 ms
+      iniciar () : void {
         this.cronometroRodando = true
         this.cronometro = setInterval(() => {
           this.tempoEmSegundos += 1        
         }, 1000)
       },
-      finalizar () {
+      finalizar () : void {
         this.cronometroRodando = false
         clearInterval(this.cronometro)
         this.$emit('aoTemporizadorFinalizado', this.tempoEmSegundos)
@@ -51,3 +49,8 @@
     }
   });
   </script>
+  <style scoped>
+  .button {
+    margin-left: 8px;
+  }
+</style>
