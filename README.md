@@ -23,7 +23,7 @@ You can <strong> access the source code of the initial project </strong> or <str
 
 ### 🛠️ Open & Run SoundPad
 
-To run **Your Way Tracker**, just click in the link **link** or download the repository,<strong> for a better experience you can also download vue.js</strong>, run the terminal, select the paste that you extracted with "cd your-way-tracker" and then run "npm run serve" after that just open locally.
+To run **Your Way Tracker**, just click in the link **https://your-way-tracker.vercel.app/** or download the repository,<strong> for a better experience you can also download vue.js</strong>, run the terminal, select the paste that you extracted with "cd your-way-tracker" and then run "npm run serve" after that just open locally.
 
 
 ### Contact
