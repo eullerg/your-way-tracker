@@ -1,63 +1,60 @@
 <template>
     <header>
-        <h1>
-            <img src="../assets/logo.png" alt="">
-        </h1>
-        <button class="button" @click="alterarTema" >
-            {{ textoBotao }}
-        </button>
-        <nav class="panel mt-5">
-            <ul>
-                <li>
-                    <router-link to="/" class="link">
-                        <i class="fas fa-tasks"></i>
-                        tarefas
-                    </router-link>
-                </li>
-                <li>
-                    <router-link to="/projetos" class="link">
-                    <i class="fas fa-project-diagram"></i>
-                    projetos
-                    </router-link>
-                </li>
-            </ul>
-        </nav>
+      <h1>
+        <img alt="Alura Tracker" src="../assets/logo.png">
+      </h1>
+      <div class="has-text-centered">
+        <button class="button" @click="alterarModo">Ativar modo {{ textoBtn }}</button>
+      </div>
+      <nav class="panel mt-5">
+        <ul>
+          <li>
+            <router-link to="/" class="link">
+              <i class="fas fa-tasks"></i>
+              tarefas
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/projetos" class="link">
+              <i class="fas fa-project-diagram"></i>
+              projetos
+            </router-link>
+          </li>
+        </ul>
+      </nav>
     </header>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    name: 'BarraLateral',
-    emits: ['aoTemaAlterado'],
+  </template>
+  
+  <script lang="ts">
+  import { defineComponent } from "vue";
+  
+  export default defineComponent({
+    name: "BarraLateral",
+    emits: ['aoAlterarModo'],
     data () {
-        return {
-            modoEscuroAtivo: false
-        }
-    },
-    computed: {
-        textoBotao () : string {
-      return this.modoEscuroAtivo ? 'Light mode' : 'Dark mode'
-    }
+      return {
+        modoEscuro: false
+      }
     },
     methods: {
-        alterarTema () : void {
-            this.modoEscuroAtivo = !this.modoEscuroAtivo
-            this.$emit('aoTemaAlterado', this.modoEscuroAtivo)
-        }
+      alterarModo () : void {
+        this.modoEscuro = !this.modoEscuro
+        this.$emit('aoAlterarModo', this.modoEscuro)
+      }
+    },
+    computed: {
+      textoBtn () : string {
+        return this.modoEscuro ? 'claro' : 'escuro'
+      }
     }
-})
-
+  });
 </script>
-
-
 <style scoped>
 h1 {
-    text-align: center;
+  text-align: center;
 }
 strong {
-    color: #f95738;
+  color: #f95738;
 }
 header {
     padding: 2rem;
@@ -66,10 +63,9 @@ header {
     height: 100vh;
 }
 @media only screen and (max-width: 768px) {
-    header {
-        padding: 2.5rem;
-        height: auto;
-    }
+  header {
+    height: auto;
+  }
 }
 .panel li {
     margin: 8px 0;

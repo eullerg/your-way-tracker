@@ -1,9 +1,58 @@
-  {
+{
   "projetos": [
     {
       "id": 1,
-      "nome": "Your Way Tracker"
+      "nome": "Bem vindo!"
+    },
+    {
+      "id": 2,
+      "nome": "NetWayBank 2.4"
+    },
+    {
+      "id": 3,
+      "nome": "Estudando padrões de projeto"
+    },
+    {
+      "nome": "Your Way Tracker 3.0",
+      "id": 4
+    }
+  ],
+  "tarefas": [
+    {
+      "id": 1,
+      "duracaoEmSegundos": 120,
+      "descricao": "Bem vindo!",
+      "projeto": {
+        "id": 1,
+        "nome": "Organize os seus projetos e atividades com a Your Way :)"
+      }
+    },
+    {
+      "duracaoEmSegundos": 2,
+      "descricao": "Refatoração do vuex",
+      "projeto": {
+        "id": 1,
+        "nome": "Your Way Tracker 3.0"
+      },
+      "id": 2
+    },
+    {
+      "duracaoEmSegundos": 1,
+      "descricao": "Estudando padrões de projetos",
+      "projeto": {
+        "nome": "NetWayBank 2.4",
+        "id": 2
+      },
+      "id": 3
+    },
+    {
+      "duracaoEmSegundos": 7,
+      "descricao": "Configuração do ambiente!",
+      "projeto": {
+        "id": 3,
+        "nome": "Your Way Tracker 3.0!"
+      },
+      "id": 4
     }
   ]
 }
-
