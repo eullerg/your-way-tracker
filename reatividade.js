@@ -1,6 +1,6 @@
 const projeto = {
     id: 1,
-    descricao: 'Alura Tracker 3.0'
+    descricao: 'Your Way Tracker 3.0'
   }
   
   const proxy = new Proxy(projeto, {
