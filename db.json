@@ -13,12 +13,8 @@
       "nome": "Estudando padrões de projeto"
     },
     {
-      "nome": "Your Way Tracker 3.0",
-      "id": 4
-    },
-    {
-      "nome": "bem vindo!",
-      "id": 5
+      "nome": "Vamos ser produtivos juntos!",
+      "id": 6
     }
   ],
   "tarefas": [
@@ -57,6 +53,15 @@
         "nome": "Your Way Tracker 3.0!"
       },
       "id": 4
+    },
+    {
+      "duracaoEmSegundos": 3,
+      "descricao": "Estudando REST API com conexão a outros servidores",
+      "projeto": {
+        "nome": "Vamos ser produtivos juntos!",
+        "id": 6
+      },
+      "id": 5
     }
   ]
 }
