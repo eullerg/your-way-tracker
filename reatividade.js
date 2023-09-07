@@ -11,7 +11,9 @@ const projeto = {
     set(objetoOriginal, chave, valor) {
       console.log(`Alguém alterou a chave ${chave} do projeto para o valor ${valor}`)
       objetoOriginal[chave] = valor
-    }
+    },
+    
+    const : port = process.env.PORT || 3000,
   })
   
   proxy.descricao = 'Reatividade é mega bacana'
