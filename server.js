@@ -3,8 +3,14 @@ const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
-const port = process.env.PORT || 3000;
 
+
+
+const projeto = {
+    id: 1,
+    descricao: 'Your Way Tracker 3.0'
+  }
+  
 server.use(middlewares);
 // Add this before server.use(router)
 server.use(
