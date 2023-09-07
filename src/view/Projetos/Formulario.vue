@@ -26,7 +26,7 @@
   import useNotificador from "@/hooks/notificador";
   import { ALTERAR_PROJETO, CADASTRAR_PROJETO } from "@/store/tipo-acoes";
   import { useRouter } from "vue-router";
-  
+ 
   export default defineComponent({
     name: "VFormulario",
     props: {

@@ -42,6 +42,7 @@
   import { useStore } from "@/store";
   import { computed, defineComponent } from "vue";
   import { OBTER_PROJETOS, REMOVER_PROJETO } from "@/store/tipo-acoes";
+
   
   export default defineComponent({
     name: "VLista",
@@ -57,7 +58,7 @@
         projetos: computed(() => store.state.projeto.projetos),
         store
       }
-    }
+    },
   });
   </script>
   
