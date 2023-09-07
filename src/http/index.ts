@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 
 const httpClient: AxiosInstance = axios.create({
-  baseURL: "https://register-api-rosy.vercel.app/",
+  baseURL: "http://localhost:3000/",
   headers: {
     "Content-type": "application/json",
   },
